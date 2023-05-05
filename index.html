@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!--doctype 선언문 html이라는 파일이라는 걸 선언-->
+<html>
+    
+    <head>
+         <meta charset="utf-8">  <!--한글이나 특수문자 깨짐 방지-->
+         <title>
+            만수 쇼핑몰
+         </title>
+    </head>
+    <script language="javascript">
+        
+        function login_page(form) {
+        //원하는 패스워드를 설정
+        if (form.pass.value=="1234") {
+        //패스워드가 일치하면 이동할 문서의 경로
+        location="https://github.com/clenten/mansutest2/tree/main"
+        } else {
+        alert("패스워드가 틀립니다.")
+        }
+        }
+        
+        
+        // 비밀번호는 1234, 사이트는 https://github.com/clenten/mansutest2/tree/main로 설정되어 있습니다.
+        </script>
+    <body>
+        <p align="left">
+            clenten의 github로 들어가려면 비밀번호 1234를 쳐주세요.</p>
+            <form name="loginForm">
+            <p style="margin-bottom:20;"> 비밀번호입력
+            <input name="pass" type="password" size="12">
+            <input type="button" value="확 인" onClick="login_page(this.form)" style="font-weight:bolder; font-size:4mm;"><BR>
+            </form>
+            <p align="left"></p>
+        <div class="button">
+            <button type="button" class="button_click" onClick="location.href='basket.html'"></button>
+        </div>
+        
+
+
+        
+        <div class="main_image"> <!-- div 레이아웃 구별 class 복수 스타일 적용 main_image는 아마 그냥 이름으로 넣는 것일듯-->
+            <img src="batang3.png" alt="">  <!--img src가 이미지 넣는거고 batang.png는 이미지 파일 이름 레지퍼토리에 이미지 파일도 넣어줘야 적용됨. -->
+            <h1 class="main_image_text" style="font-size:50px">만수 쇼핑몰</h1> <!--이미지 파일 위에 따로 글자 넣기 main_image_class라는 거에 지정함.-->
+        </div>
+        
+    </body>
+    <style>
+        
+        .main_image_text {
+          position: absolute;
+          top: 27%;
+          left: 50%;
+          transform: translate( -50%, -50% );
+          color: white;
+          
+        }
+        .button_click {
+
+        background-color: skyblue;
+ 
+        color: white;
+
+        order: none;
+
+
+
+        width: 100px;
+
+        height: 30px;
+
+}
+        </style>
+        
+</html>
